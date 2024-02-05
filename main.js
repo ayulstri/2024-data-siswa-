@@ -18,12 +18,15 @@ const firebaseConfig = {
   storageBucket: "insan-cemerlang-dc590.appspot.com",
   messagingSenderId: "1002966213043",
   appId: "1:1002966213043:web:4c787b7684f9eafa35ebc6",
+  
 };
 
-const app = initializeApp(firebaseConfig);
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 
+const app = initializeApp(firebaseConfig);
+const ad = getFirestore(app);
+
+export async function ambilDaftarSiswa () {
+}
 export async function ambilDaftarSiswa () {
   const siswaRef = collection(db, "siswa");
   const q = query(siswaRef, orderBy("nama"));
@@ -36,11 +39,14 @@ export async function ambilDaftarSiswa () {
   
   return retval;
 }
- export async function tambahSiswa(nama) {
-   try {
-   const docRef = await addDoc(collection(ad, "siswa"),{
-    nama: val
-  }):
-  console.log('Berhasil menyimpan dokumen dengan ID: ' + )
-   console.log("Error menambah dokumen: " + e);
- }
+
+export async function tambahSiswa(val) {
+  try {
+    const docRef = await addDoc(collection(db, "siswa"), {
+      nama: val
+    });
+    console.log('Berhasil menyimpan dokumen dengan ID: ' + docRef.id);
+  } catch (e) {
+    console.log('Error menambah dokumen: ' + e);
+  }
+}
