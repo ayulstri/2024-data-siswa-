@@ -8,17 +8,17 @@ import {
   doc,
   query, 
   orderBy
-  } from "https://www.gstatic.com/firebasejs/10.7.2/firestore.js";
+  } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBHWBUFLyOOfG05RKDUiRDUS2J3k8BVSkY",
-  authDomain: "insan-cemerlang-dc590.firebaseapp.com",
-  projectId: "insan-cemerlang-dc590",
-  storageBucket: "insan-cemerlang-dc590.appspot.com",
-  messagingSenderId: "1002966213043",
-  appId: "1:1002966213043:web:4c787b7684f9eafa35ebc6",
-  
+  apiKey: "AIzaSyASPpFm467k79sDkVFWWseRou7h8_e2XLY",
+  authDomain: "insan-cemerlang-e3a49.firebaseapp.com",
+  projectId: "insan-cemerlang-e3a49",
+  storageBucket: "insan-cemerlang-e3a49.appspot.com",
+  messagingSenderId: "1633123066",
+  appId: "1:1633123066:web:77ee69dcef30d9b5ee6743",
+  measurementId: "G-WR2W88N8M3"
 };
 
 
