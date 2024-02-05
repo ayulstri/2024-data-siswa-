@@ -23,7 +23,7 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
-const ad = getFirestore(app);
+const db = getFirestore(app);
 
 export async function ambilDaftarSiswa () {
   const siswaRef = collection(db, "siswa");
