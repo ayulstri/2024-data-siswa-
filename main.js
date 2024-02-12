@@ -8,7 +8,7 @@ import {
   deleteDoc,
   doc,
   query, 
-  orderBy
+  orderBy,
   updateDoc 
   } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
 
