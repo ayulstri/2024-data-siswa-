@@ -50,5 +50,5 @@ export async function tambahSiswa(val) {
 }
 
 export async function hapusSiswa(docId) {
-  await deleteDoc(doc(db, "siswa"), docId);
+  await deleteDoc(doc(db, "siswa", docId));
 }
